@@ -74,8 +74,8 @@ async function createEnemy()
 
     const size = randomBetween(24, 56);
 
-    enemy.width = 50;
-    enemy.height = 50;
+    enemy.width = 45;
+    enemy.height = 45; 
     enemy.x = randomBetween(size, GAME_WIDTH - size);
     enemy.y = -size;
     enemy.speed = randomBetween(1,2);
@@ -232,8 +232,8 @@ function setupInput(onRestart, backgroundMusic)
     const player = new Sprite(playerTexture);
 
     player.anchor.set(0.5);
-    player.width = 140;
-    player.height = 220;
+    player.width = 100;
+    player.height = 180;
     player.x = GAME_WIDTH / 2;
     player.y = GAME_HEIGHT - 100;
 
